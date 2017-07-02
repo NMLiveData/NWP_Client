@@ -1,0 +1,197 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+header, nav, main, section, #logo, #search input[type="text"], a, #scan {
+	display: block;
+}
+
+body {
+	text-decoration: none;
+	background:url(../images/bg1.jpg) no-repeat center center fixed;
+	background-size:96% auto;   
+	background-color: #403c35;
+	overflow: hidden;
+	font-family: 'Lora';
+}
+
+
+#diagramWrapper{
+	margin: 0px auto;   
+	width: 80%;
+	position: relative;
+	margin: 0px auto;
+	color:#ffffff;
+}
+
+
+#header{
+	position: relative;
+	height: 60px;
+	border-bottom: 1px solid #FFBA00;
+    font-size: 20px;
+    text-align:right;
+} 
+
+#sltxt {
+	float: left;
+    padding-top: 24px;
+    color: #aaaaaa;
+    font-weight: bold;
+}
+
+#ldtxt{
+	float: left;
+	display: inline-block;
+	margin-left: 6px;
+	padding-top: 24px;
+	color: #FFBA00;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#abouttxt{
+	float: right;
+    width: 20%;
+    padding-top: 24px;
+    color: #aaaaaa;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#abouttxt a{
+	text-decoration: none;
+	color: #aaaaaa;
+}
+
+
+
+#oval {
+	position: absolute;
+
+	z-index: -1;
+	width: 900px;
+	height: 410px;
+	background: red;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 250px / 200px;
+}
+
+/**** Diagram css ****/
+
+.imgWrapper{
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFBA00;
+}
+
+.eye{
+	height: 10px;
+    width: 16px;
+    display: inline-block;
+}
+
+
+.photo{
+	border: 1px solid #FFBA00;
+	display: inline-block;
+/*	display: inline-block;
+	position: absolute;*/
+}
+
+.photo img{
+	height: 67px;
+	width: 100px;
+	border: 4px solid #1a1a1a;
+}
+
+
+/**/
+
+#pos1{
+	top: 850%;
+    right: 18%;
+}
+
+#pos2{
+	top: 904%;
+    right: 35%
+}
+
+#pos3{
+	top: 904%;
+    left: 35%;
+}
+
+#pos4{
+	top: 850%;
+    left: 18%;
+}
+
+#pos5{
+	top: 700%;
+    left: 6%
+}
+
+#pos6{
+	top: 508%;
+	left: 0%;
+}
+
+#pos7{
+	top: 318%;
+    left: 9%;
+}
+
+#pos8{
+	top: 210%;
+    left: 25%;
+}
+
+#pos9{
+	top: 174%;
+    right: 45%;
+}
+
+#pos10{
+	top: 210%;
+    right: 25%;
+}
+
+#pos11{
+	top: 318%;
+    right: 9%;
+}
+
+#pos12{
+	top: 508%;
+    right: 0%;
+}
+
+#pos13{
+	top: 700%;
+    right: 6%;
+}
+
+
+
+
+
+
+
+/*************************************/
+
+
+
+
+
+
+
+.clear{
+	clear: both;
+}
