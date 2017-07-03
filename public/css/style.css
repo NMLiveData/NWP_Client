@@ -137,7 +137,9 @@ body {
     width: 100px;
     border: 4px solid #1a1a1a;
 }
-
+.photo:hover{
+    opacity: 0.4;
+}
 
 #pos1{
     top: 850%;
@@ -205,17 +207,21 @@ body {
 
 
 #curve{
-        margin:0 auto;
-        position:relative;
-        width:100%;
-        height:100%;
+    margin:0 auto;
+    position:relative;
+    width:100%;
+    height:100%;
 }
 
 
 
 
+/* ==================================================== */
+
+
 
 /**** About css ****/
+/*******************/
 #contentWrapper main{
     position: relative;
     width: 35%;
