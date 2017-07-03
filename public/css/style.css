@@ -294,32 +294,164 @@ footer{
 
 
 
-@media (min-width: 591px) and (max-width: 850px) {
+
+
+/* ==================================================== */
+
+
+/**** Media Queries css ****/
+/***************************/
+
+@media (min-width: 486px) and (max-width: 850px) {
      #contentWrapper main{
         width: 45%;
     }
 
     /*Swiper*/
-    #fullAbout{
+    #aboutContent{
         overflow-y: scroll;
         height: 400px;
     }
 
-    #fullAbout::-webkit-scrollbar {
+    #aboutContent::-webkit-scrollbar {
             display: none;
     }
     /**/
     footer{
         padding-top: 45px; 
-        padding-bottom: 35px;
     }
+
     #aboutTitle{
         margin-top: 10%; /*15%*/
         margin-bottom: 10%;/*10%*/
     }
 }
 
-@media (max-width: 590px){
+
+@media (max-width: 485px){
+
+    /**** Diagram css ****/
+    #p1, #p2{
+        width: 50%;
+        float: left;
+        height: 100vh; /*get 100% of screen height*/
+    }
+
+    #p2{
+        direction: rtl;
+    }
+    .imgWrapper{
+        position: relative;
+    }
+    #diagramBody{
+        background:url(../images/bg2.png) no-repeat center center fixed;
+        background-size:100% auto;   
+        background-color: #403c35;
+    }
+
+    .photo img{
+        height: 58px;
+        width: 86px;
+        border: 4px solid #1a1a1a;
+    }
+
+    #pos1{
+        height: 12.5%;
+        top: inherit;
+        left: 0%;
+        right: inherit;
+    }
+
+    #pos2{
+        height: 12.5%;
+        top: inherit;
+        left: 0%;
+        right: inherit;
+    }
+
+    #pos3{
+        height: 12.5%;
+        top: inherit;
+        left: 0%;
+        right: inherit;
+    }
+
+    #pos4{
+        height: 12.5%;
+        top: inherit;
+        left: 0%;
+    }
+
+    #pos5{
+        height: 12.5%;
+        top: inherit;
+        left: 0%;
+    }
+    #pos6{
+        margin-top: 32%;
+        height: 12.5%;
+        top: inherit;
+        left: 0%;
+        right: inherit;
+    }
+
+    #pos7{
+        margin-top: 13%;
+        height: 12.5%;
+        direction: rtl;
+        top: inherit;
+        right: 0%;
+        left: inherit;
+    }
+
+    #pos8{
+        height: 12.5%;
+        direction: rtl;
+        top: inherit;
+        right: 0%;
+        left: inherit;
+    }
+
+    #pos9{
+        height: 12.5%;
+        direction: rtl;
+        top: inherit;
+        right: 0%;
+    }
+    #pos10{
+        height: 12.5%;
+        direction: rtl;
+        top: inherit;
+        right: 0%;
+    }
+
+    #pos11{
+        height: 12.5%;
+        direction: rtl;
+        top: inherit;
+        right: 0%;
+    }
+
+    #pos12{
+        height: 12.5%;
+        direction: rtl;
+        top: inherit;
+        right: 0%;
+    }
+
+    #pos13{
+        height: 12.5%;
+        direction: rtl;
+        top: inherit;
+        left: 0%;
+        right: inherit;
+    }
+
+
+
+
+
+
 
    
     /**** About css ****/
@@ -332,18 +464,17 @@ footer{
     }
 
     /*Swiper*/
-    #fullAbout{
+    #aboutContent{
         overflow-y: scroll;
         height: 400px;
     }
 
-    #fullAbout::-webkit-scrollbar {
+    #aboutContent::-webkit-scrollbar {
         display: none;
     }
     /**/
     footer{
         padding-top: 45px; 
-        padding-bottom: 35px;
     }
     #aboutTitle{
         margin-top: 10%; /*15%*/
