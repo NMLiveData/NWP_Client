@@ -20,14 +20,18 @@ body {
 	background-color: #403c35;
 }
 
-#contentBody{
+#aboutBody, #contentBody{
     width: 100%;
 	background-color: #e5e5e5;
 }
 
-#diagramWrapper, #contentWrapper{
+#contentBody{
+    overflow: hidden;
+}
+
+#diagramWrapper, #aboutWrapper, #contentWrapper{
 	margin: 0px auto;   
-	width: 90%;
+	width: 80%;
 	position: relative;
 	margin: 0px auto;
 }
@@ -37,18 +41,30 @@ body {
     display: inline-block;
 }
 
+#aboutWrapper a{
+    text-decoration: none;
+    display: inline-block;
+}
+
 #contentWrapper a{
     text-decoration: none;
     display: inline-block;
 }
 
-#header{
+.mainHeader{
     top:0px;
-	position: relative;
-	height: 60px;
-	border-bottom: 1px solid #FFBA00;
+    position: relative;
+    height: 60px;
     font-size: 1.4em;
     text-align:right;
+}
+
+#headerA{
+     border-bottom: 1px solid #FFBA00;
+}
+
+#headerB{
+    border-bottom: 1px solid #1a1a1a;
 } 
 
 #sltxt, #sltxtC{
@@ -101,8 +117,9 @@ body {
 
 
 
-/**** Diagram css ****/
-/********************/
+/*** Diagram General CSS ***/
+/***************************/
+
 .imgWrapper{
     position: absolute;
     display: inline-block;
@@ -206,15 +223,10 @@ body {
 }
 
 
+/**** About General CSS ****/
+/***************************/
 
-
-/* ==================================================== */
-
-
-
-/**** About css ****/
-/*******************/
-#contentWrapper main{
+#aboutWrapper main{
     position: relative;
     width: 35%;
     margin-right: 12%;
@@ -240,12 +252,9 @@ body {
         display: none;
 }
 
-
-
 footer{
     display: block;
-    padding-top: 90px; /*90*/
-    padding-bottom: 90px; /*90*/
+    padding-top: 90px;
     margin: 0px auto;
     width: 100%;
     height: 40px;
@@ -293,11 +302,78 @@ footer{
     width: 9%;
 }
 
+.clear{
+    clear: both;
+}
 
 
 
+/*** Content General CSS ***/
+/***************************/
 
+#photoInfo1, #photoInfo2{
+    float: left;
+    margin:0px auto;
+}
+
+#photoInfo1{
+    width: 48.5%;
+}
+
+#photoInfo2{
+    width: 48.5%;
+    margin-left: 3%;
+}
+
+#photoName{
+    height: 11vh;
+    font-weight: bold;
+}
+
+#picName{
+    padding-top: 3.5vh;
+    color: #1a1a1a;/*#aaaaaa;*/
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+/*#photoPrint{
+    height: 46vh;
+}*/
+
+#url{
+    width: 100%;
+}
+
+#photoConcepts{
+    margin-top: 1.5vh;
+    border-top: 1px solid #000000;
+}
+
+#graph{
+    height: 41.5vh;
+    margin-left: 5%;
+}
+
+#story{
+    margin-top: 3.5vh;
+    height: 55vh;
+    overflow-y: auto;
+    line-height: 1.7;
+    margin-left: 5%;
+}
+
+
+
+/* =================================================================== */
 /* ========================= Media Queries =========================== */
+/* =================================================================== */
+
+
+/* ===================================== */
+/* ================ 1 ================== */
+/* ===================================== */
+
 
 @media 
     (min-width: 751px) 
@@ -376,26 +452,21 @@ and (orientation: portrait) {
 }
 
 
+
+
+/* ===================================== */
+/* ================ 2 ================== */
+/* ===================================== */
+
+
 /* Lanscape Mobile */
 @media 
     (min-width: 481px) 
-and (max-width: 750px)
-and (orientation: landscape) {
-
-
-    #abouttxtC , #abouttxt, #ldtxt, 
-#ldtxtC, #sltxt, #sltxtC{
-    padding-top: 20px;
-}
-
-#header{
-    height: 50px;
-}
-
+and (max-width: 750px){
 
    .photo img{
-        height: 39px;
-        width: 58px;
+        height: 34px;
+        width: 50px;
         border: 3px solid #1a1a1a;
     }
 
@@ -406,73 +477,70 @@ and (orientation: landscape) {
     }
 
     #pos1{
-    top: 503%;
-    right: 19%;
-}
+        top: 493%;
+        right: 19%;
+    }
 
-#pos2{
-    top: 532%;
-    right: 34%
-}
+    #pos2{
+        top: 512%;
+        right: 34%
+    }
 
-#pos3{
-    top: 532%;
-    left: 36%;
-}
+    #pos3{
+        top: 512%;
+        left: 36%;
+    }
 
-#pos4{
-    top: 503%;
-    left: 21%;
-}
+    #pos4{
+        top: 493%;
+        left: 21%;
+    }
 
-#pos5{
-    top: 422%;
-    left: 6%
-}
-#pos6{
-    top: 310%;
-    left: 0%;
-}
+    #pos5{
+        top: 402%;
+        left: 6%
+    }
+    #pos6{
+        top: 290%;
+        left: 0%;
+    }
 
-#pos7{
-    top: 202%;
-    left: 9%;
-}
+    #pos7{
+        top: 182%;
+        left: 9%;
+    }
 
-#pos8{
-    top: 154%;
-    left: 25%;
-}
+    #pos8{
+        top: 134%;
+        left: 25%;
+    }
 
-#pos9{
-    top: 130%;
-    right: 44%;
-}
-#pos10{
-    top: 154%;
-    right: 25%;
-}
+    #pos9{
+        top: 110%;
+        right: 43%;
+    }
+    #pos10{
+        top: 134%;
+        right: 25%;
+    }
 
-#pos11{
-    top: 202%;
-    right: 8%;
-}
+    #pos11{
+        top: 182%;
+        right: 8%;
+    }
 
-#pos12{
-    top: 310%;
-    right: 0%;
-}
+    #pos12{
+        top: 290%;
+        right: 0%;
+    }
 
-#pos13{
-    top: 422%;
-    right: 6%;
-}
+    #pos13{
+        top: 402%;
+        right: 6%;
+    }
 
-
-
-     /**** Diagram css ****/
-
-     #contentWrapper main{
+     /**** About css ****/
+    #aboutWrapper main{
         width: 45%;
     }
 
@@ -498,23 +566,14 @@ and (orientation: landscape) {
 
 
 
+
+/* ===================================== */
+/* ================ 3 ================== */
+/* ===================================== */
+
+
 /* Portrait Mobile */
 @media (max-width: 480px) and (orientation: portrait){
-
-    #header{
-        height: 50px;
-    }
-
-
-/*      #abouttxtC , #abouttxt, #ldtxt, 
-#ldtxtC, #sltxt, #sltxtC{
-    padding-top: 20px;
-}
-
-#header{
-    height: 50px;
-}
-*/
 
     /**** Diagram css ****/
     #p1, #p2{
@@ -536,8 +595,8 @@ and (orientation: landscape) {
     }
 
     .photo img{
-        height: 58px;
-        width: 86px;
+        height: 54px;
+        width: 80px;
         border: 4px solid #1a1a1a;
     }
 
@@ -633,15 +692,8 @@ and (orientation: landscape) {
         right: inherit;
     }
 
-
-
-
-
-
-
-   
     /**** About css ****/
-    #contentWrapper main{
+    #aboutWrapper main{
         position: relative;
         width: 75%;
         margin-right: none;
@@ -675,6 +727,3 @@ and (orientation: landscape) {
 
 
 
-.clear{
-	clear: both;
-}
