@@ -14,8 +14,8 @@ body {
 
 
 #diagramBody{
-    /*overflow: hidden;*/
-	background:url(../images/bg1.jpg) no-repeat center center fixed;
+    overflow: hidden;
+	background:url(../images/bg1.jpg) center center fixed;
 	background-size:96% auto;   
 	background-color: #403c35;
 }
@@ -28,6 +28,26 @@ body {
 #contentBody{
     overflow: hidden;
 }
+
+.ct-series-a .ct-point {
+  /* Colour of your points */
+  stroke: #1a1a1a;
+  /* Size of your points */
+  stroke-width: 10px;
+  /* Make your points appear as squares */
+  stroke-linecap: round;
+  }
+
+
+  .ct-series-a .ct-line {
+  /* Set the colour of this series line */
+  stroke: #1a1a1a;
+  /* Control the thikness of your lines */
+  stroke-width: 5px;
+  /* Create a dashed line with a pattern */
+  stroke-dasharray: 10px 20px;
+}
+/**/
 
 #diagramWrapper, #aboutWrapper, #contentWrapper{
 	margin: 0px auto;   
@@ -142,78 +162,13 @@ body {
 }
 .photo img{
     max-width: 100%;
-    height: 67px;
-    width: 100px;
+    height: 80px;
+    width: 120px;
     border: 4px solid #1a1a1a;
 }
 .photo:hover{
     opacity: 0.4;
 }
-
-#pos1{
-    top: 850%;
-    right: 18%;
-}
-
-#pos2{
-    top: 904%;
-    right: 35%
-}
-
-#pos3{
-    top: 904%;
-    left: 35%;
-}
-
-#pos4{
-    top: 850%;
-    left: 18%;
-}
-
-#pos5{
-    top: 700%;
-    left: 6%
-}
-#pos6{
-    top: 508%;
-    left: 0%;
-}
-
-#pos7{
-    top: 318%;
-    left: 9%;
-}
-
-#pos8{
-    top: 210%;
-    left: 25%;
-}
-
-#pos9{
-    top: 174%;
-    right: 44%;
-}
-#pos10{
-    top: 210%;
-    right: 25%;
-}
-
-#pos11{
-    top: 318%;
-    right: 9%;
-}
-
-#pos12{
-    top: 508%;
-    right: 0%;
-}
-
-#pos13{
-    top: 700%;
-    right: 6%;
-}
-
-
 
 #curve{
     margin:0 auto;
@@ -332,7 +287,7 @@ footer{
 
 #picName{
     padding-top: 3.5vh;
-    color: #1a1a1a;/*#aaaaaa;*/
+    color: #1a1a1a;
     font-weight: bold;
     font-size: 1.4em;
 }
@@ -347,7 +302,18 @@ footer{
 
 #photoConcepts{
     margin-top: 1.5vh;
-    border-top: 1px solid #000000;
+    padding: 5% 0% 5% 0%;
+    border-top: 1px solid #1a1a1a;
+}
+
+.contestPackage{
+    margin-bottom: 2%;
+    width: 50%;
+    float: left;
+}
+
+.conceptName{
+    font-weight: bold;
 }
 
 #graph{
@@ -375,168 +341,26 @@ footer{
 /* ===================================== */
 
 
-@media 
-    (min-width: 751px) 
-and (max-width: 930px)
-and (orientation: portrait) {
-
-    .photo img{
-        height: 58px;
-        width: 85px;
-        border: 4px solid #1a1a1a;
-    }
-
-    #pos1{
-        top: 1060%;
-        right: 18%;
-    }
-
-    #pos2{
-        top: 1105%;
-        right: 34%
-    }
-
-    #pos3{
-        top: 1105%;
-        left: 34%;
-    }
-
-    #pos4{
-        top: 1060%;
-        left: 18%;
-    }
-
-    #pos5{
-        top: 942%;
-        left: 6%
-    }
-    #pos6{
-        top: 820%;
-        left: 0%;
-    }
-
-    #pos7{
-        top: 702%;
-        left: 9%;
-    }
-
-    #pos8{
-        top: 640%;
-        left: 25%;
-    }
-
-    #pos9{
-        top: 614%;
-        right: 43%;
-    }
-    #pos10{
-        top: 640%;
-        right: 25%;
-    }
-
-    #pos11{
-        top: 702%;
-        right: 8%;
-    }
-
-    #pos12{
-        top: 820%;
-        right: 0%;
-    }
-
-    #pos13{
-        top: 942%;
-        right: 6%;
-    }
-
-}
-
-
-
 
 /* ===================================== */
 /* ================ 2 ================== */
 /* ===================================== */
 
 
+
 /* Lanscape Mobile */
 @media 
-    (min-width: 481px) 
-and (max-width: 750px){
+    (min-width: 591px) 
+and (max-width: 850px){
 
+    .photo{
+        top:inherit;
+        right: inherit;
+    }
    .photo img{
-        height: 34px;
+        height: 37px;
         width: 50px;
         border: 3px solid #1a1a1a;
-    }
-
-    .eye{
-        height: 6px;
-        width: 12px;
-        display: inline-block;
-    }
-
-    #pos1{
-        top: 493%;
-        right: 19%;
-    }
-
-    #pos2{
-        top: 512%;
-        right: 34%
-    }
-
-    #pos3{
-        top: 512%;
-        left: 36%;
-    }
-
-    #pos4{
-        top: 493%;
-        left: 21%;
-    }
-
-    #pos5{
-        top: 402%;
-        left: 6%
-    }
-    #pos6{
-        top: 290%;
-        left: 0%;
-    }
-
-    #pos7{
-        top: 182%;
-        left: 9%;
-    }
-
-    #pos8{
-        top: 134%;
-        left: 25%;
-    }
-
-    #pos9{
-        top: 110%;
-        right: 43%;
-    }
-    #pos10{
-        top: 134%;
-        right: 25%;
-    }
-
-    #pos11{
-        top: 182%;
-        right: 8%;
-    }
-
-    #pos12{
-        top: 290%;
-        right: 0%;
-    }
-
-    #pos13{
-        top: 402%;
-        right: 6%;
     }
 
      /**** About css ****/
@@ -573,7 +397,11 @@ and (max-width: 750px){
 
 
 /* Portrait Mobile */
-@media (max-width: 480px) and (orientation: portrait){
+@media (max-width: 590px) and (orientation: portrait){
+
+    #diagramWrapper, #aboutWrapper, #contentWrapper{
+        width: 90%;
+    }
 
     /**** Diagram css ****/
     #p1, #p2{
@@ -600,97 +428,81 @@ and (max-width: 750px){
         border: 4px solid #1a1a1a;
     }
 
-    #pos1{
+    .pos_1{
         height: 12.5%;
-        top: inherit;
         left: 0%;
-        right: inherit;
+    }
+    .pos_2{
+        height: 12.5%;
+        direction: rtl;
+        right: 0%;
+    }
+/*    #pos1{
+        height: 12.5%;
+        left: 0%;
     }
 
     #pos2{
         height: 12.5%;
-        top: inherit;
         left: 0%;
-        right: inherit;
     }
 
     #pos3{
         height: 12.5%;
-        top: inherit;
         left: 0%;
-        right: inherit;
     }
 
     #pos4{
         height: 12.5%;
-        top: inherit;
         left: 0%;
     }
 
     #pos5{
         height: 12.5%;
-        top: inherit;
         left: 0%;
-    }
+    }*/
     #pos6{
         margin-top: 32%;
-        height: 12.5%;
-        top: inherit;
-        left: 0%;
-        right: inherit;
     }
 
     #pos7{
         margin-top: 13%;
-        height: 12.5%;
-        direction: rtl;
-        top: inherit;
-        right: 0%;
-        left: inherit;
     }
 
-    #pos8{
+/*    #pos8{
         height: 12.5%;
         direction: rtl;
-        top: inherit;
         right: 0%;
-        left: inherit;
     }
 
     #pos9{
         height: 12.5%;
         direction: rtl;
-        top: inherit;
         right: 0%;
     }
     #pos10{
         height: 12.5%;
         direction: rtl;
-        top: inherit;
         right: 0%;
     }
 
     #pos11{
         height: 12.5%;
         direction: rtl;
-        top: inherit;
         right: 0%;
     }
 
     #pos12{
         height: 12.5%;
         direction: rtl;
-        top: inherit;
         right: 0%;
     }
 
     #pos13{
         height: 12.5%;
         direction: rtl;
-        top: inherit;
         left: 0%;
-        right: inherit;
-    }
+    }*/
 
     /**** About css ****/
     #aboutWrapper main{
