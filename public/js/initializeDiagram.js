@@ -1,14 +1,12 @@
 $(document).ready(function(){
-   
     initializePosition();
-
 });
 
 
 
-$( window ).resize(function() {
+$(window).resize(function() {
     clear();
-  initializePosition();
+    initializePosition();
 });
 
 $(window).on("orientationchange",function(){
@@ -23,9 +21,7 @@ function clear(){
         });
 }
 
-
 function initializePosition(){
-
 
     var wWidth = window.innerWidth
     

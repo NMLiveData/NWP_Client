@@ -29,26 +29,6 @@ body {
     overflow: hidden;
 }
 
-.ct-series-a .ct-point {
-  /* Colour of your points */
-  stroke: #1a1a1a;
-  /* Size of your points */
-  stroke-width: 10px;
-  /* Make your points appear as squares */
-  stroke-linecap: round;
-  }
-
-
-  .ct-series-a .ct-line {
-  /* Set the colour of this series line */
-  stroke: #1a1a1a;
-  /* Control the thikness of your lines */
-  stroke-width: 5px;
-  /* Create a dashed line with a pattern */
-  stroke-dasharray: 10px 20px;
-}
-/**/
-
 #diagramWrapper, #aboutWrapper, #contentWrapper{
 	margin: 0px auto;   
 	width: 80%;
@@ -201,7 +181,11 @@ body {
     color: #1a1a1a;
     font-size: 1em;
     line-height: 2;
+    overflow-y: scroll;
+    height: 90vh;
+
 }
+
 
 #aboutContent::-webkit-scrollbar {
         display: none;
@@ -209,7 +193,7 @@ body {
 
 footer{
     display: block;
-    padding-top: 90px;
+    padding-top: 5vh;
     margin: 0px auto;
     width: 100%;
     height: 40px;
@@ -224,6 +208,7 @@ footer{
 
 #logos img{
    width: 100%;
+   margin-bottom: 1vh;
      
 }
 
@@ -317,18 +302,19 @@ footer{
 }
 
 #graph{
+    position: relative;
     height: 41.5vh;
     margin-left: 5%;
+    padding-top: 6vh;
 }
 
 #story{
-    margin-top: 3.5vh;
-    height: 55vh;
+    margin-top: 10.6vh;
+    height: 40vh;
     overflow-y: auto;
     line-height: 1.7;
     margin-left: 5%;
 }
-
 
 
 /* =================================================================== */
@@ -336,22 +322,11 @@ footer{
 /* =================================================================== */
 
 
-/* ===================================== */
 /* ================ 1 ================== */
 /* ===================================== */
 
-
-
-/* ===================================== */
-/* ================ 2 ================== */
-/* ===================================== */
-
-
-
 /* Lanscape Mobile */
-@media 
-    (min-width: 591px) 
-and (max-width: 850px){
+@media (min-width: 591px) and (max-width: 850px){
 
     .photo{
         top:inherit;
@@ -378,9 +353,6 @@ and (max-width: 850px){
             display: none;
     }
     /**/
-    footer{
-        padding-top: 35px; 
-    }
 
     #aboutTitle{
         margin-top: 10%; /*15%*/
@@ -391,10 +363,8 @@ and (max-width: 850px){
 
 
 
+/* ================ 2 ================== */
 /* ===================================== */
-/* ================ 3 ================== */
-/* ===================================== */
-
 
 /* Portrait Mobile */
 @media (max-width: 590px) and (orientation: portrait){
@@ -437,30 +407,6 @@ and (max-width: 850px){
         direction: rtl;
         right: 0%;
     }
-/*    #pos1{
-        height: 12.5%;
-        left: 0%;
-    }
-
-    #pos2{
-        height: 12.5%;
-        left: 0%;
-    }
-
-    #pos3{
-        height: 12.5%;
-        left: 0%;
-    }
-
-    #pos4{
-        height: 12.5%;
-        left: 0%;
-    }
-
-    #pos5{
-        height: 12.5%;
-        left: 0%;
-    }*/
     #pos6{
         margin-top: 32%;
     }
@@ -468,41 +414,6 @@ and (max-width: 850px){
     #pos7{
         margin-top: 13%;
     }
-
-/*    #pos8{
-        height: 12.5%;
-        direction: rtl;
-        right: 0%;
-    }
-
-    #pos9{
-        height: 12.5%;
-        direction: rtl;
-        right: 0%;
-    }
-    #pos10{
-        height: 12.5%;
-        direction: rtl;
-        right: 0%;
-    }
-
-    #pos11{
-        height: 12.5%;
-        direction: rtl;
-        right: 0%;
-    }
-
-    #pos12{
-        height: 12.5%;
-        direction: rtl;
-        right: 0%;
-    }
-
-    #pos13{
-        height: 12.5%;
-        direction: rtl;
-        left: 0%;
-    }*/
 
     /**** About css ****/
     #aboutWrapper main{
@@ -513,7 +424,6 @@ and (max-width: 850px){
         margin: 0px auto;
     }
 
-    /*Swiper*/
     #aboutContent{
         overflow-y: scroll;
         height: 400px;
@@ -522,13 +432,30 @@ and (max-width: 850px){
     #aboutContent::-webkit-scrollbar {
         display: none;
     }
-    /**/
-    footer{
-        padding-top: 45px; 
-    }
+
     #aboutTitle{
         margin-top: 10%; /*15%*/
         margin-bottom: 10%;/*10%*/
+    }
+
+
+    /**** Content css ****/
+    #contentBody{
+        overflow-y: scroll;
+    }
+
+    #photoInfo1, #photoInfo2{
+        overflow-y: scroll;
+        float: left;
+        margin:0px auto;
+    }
+
+    #photoInfo1, #photoInfo2{
+        width: 100%;
+    }
+
+    #graph{
+        padding-top: 14vh;
     }
 
 }
