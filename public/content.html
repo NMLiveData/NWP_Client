@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="contentApp">
 <head>
 
     <meta charset="UTF-8">
@@ -8,24 +8,23 @@
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="controllers/content.js"></script> 
+
     <!-- First option -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>-->
     <!-- Second option -->
-    <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <!--  <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
     <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
-    <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/none.js"></script>
-
-    <!--  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
-
-     
-    <!-- <script src="https://code.angularjs.org/1.4.0-rc.1/angular.js"></script> -->
-
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/none.js"></script> -->
+    
 </head>
 
-<body id="contentBody">  
+<body id="contentBody" ng-controller="contentController">  
     <div id="contentWrapper">
 
         <header class="mainHeader" id="headerB">
@@ -41,7 +40,6 @@
             <section id="photoInfo1">
 
                     <div id="photoName"><div id="picName"> Food</div></div>
-                    <!-- <div id="photoPrint"></div> -->
                     <img id="url"src="http://res.cloudinary.com/livedata/livedataapp/food01.jpg">
 
                     <div id="photoConcepts">

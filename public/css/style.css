@@ -15,9 +15,9 @@ body {
 
 #diagramBody{
     overflow: hidden;
-	background:url(../images/bg1.jpg) center center fixed;
+	background:url(../images/BG_HD.jpg) no-repeat center center fixed;
 	background-size:96% auto;   
-	background-color: #403c35;
+	background-color: #383934;
 }
 
 #aboutBody, #contentBody{
@@ -54,7 +54,7 @@ body {
 .mainHeader{
     top:0px;
     position: relative;
-    height: 60px;
+    height: 11vh;
     font-size: 1.4em;
     text-align:right;
 }
@@ -69,7 +69,7 @@ body {
 
 #sltxt, #sltxtC{
 	float: left;
-    padding-top: 24px;
+    padding-top: 6vh;
     color: #e5e5e5;/*#aaaaaa;*/
     font-weight: bold;
 }
@@ -78,7 +78,7 @@ body {
 	float: left;
 	display: inline-block;
 	margin-left: 6px;
-	padding-top: 24px;
+	padding-top: 6vh;
 	color: #FFBA00;
 	font-style: italic;
 	font-weight: bold;
@@ -87,7 +87,7 @@ body {
 #abouttxt, #abouttxtC{
 	float: right;
     width: 20%;
-    padding-top: 24px;
+    padding-top: 6vh;
     font-style: italic;
     font-weight: bold;
 }
@@ -150,13 +150,16 @@ body {
     opacity: 0.4;
 }
 
-#curve{
+.curve{
     margin:0 auto;
     position:relative;
     width:100%;
     height:100%;
 }
 
+#curve1{
+    
+}
 
 /**** About General CSS ****/
 /***************************/
@@ -277,10 +280,6 @@ footer{
     font-size: 1.4em;
 }
 
-/*#photoPrint{
-    height: 46vh;
-}*/
-
 #url{
     width: 100%;
 }
@@ -301,19 +300,28 @@ footer{
     font-weight: bold;
 }
 
-#graph{
-    position: relative;
-    height: 41.5vh;
-    margin-left: 5%;
-    padding-top: 6vh;
-}
-
 #story{
-    margin-top: 10.6vh;
-    height: 40vh;
+    margin-top: 10.1vh;
+    height: 39.9vh;
     overflow-y: auto;
     line-height: 1.7;
     margin-left: 5%;
+}
+
+#graph{
+    position: relative;
+    height: 35vh;
+    margin: 0px auto;
+    margin-left: 1.8vw;
+
+}
+
+
+
+canvas{
+    width: 100%;
+   /* max-width: 800px;*/
+    height: auto;
 }
 
 
@@ -328,11 +336,16 @@ footer{
 /* Lanscape Mobile */
 @media (min-width: 591px) and (max-width: 850px){
 
+    #sltxt, #sltxtC,#ldtxt,
+    #abouttxt, #abouttxtC, #ldtxtC a {
+         padding-top: 4vh;
+    }
+
     .photo{
         top:inherit;
         right: inherit;
     }
-   .photo img{
+    .photo img{
         height: 37px;
         width: 50px;
         border: 3px solid #1a1a1a;
@@ -358,6 +371,29 @@ footer{
         margin-top: 10%; /*15%*/
         margin-bottom: 10%;/*10%*/
     }
+
+    /**** Content css ****/
+    #contentBody{
+        overflow-y: scroll;
+    }
+
+    #photoInfo1, #photoInfo2{
+        overflow-y: scroll;
+        float: left;
+        margin:0px auto;
+    }
+
+    #photoInfo1, #photoInfo2{
+        width: 100%;
+    }
+
+    #story{
+        margin-left: 1vw;
+    }
+    #graph{
+        padding-top: 14vh;
+    }
+
 }
 
 
@@ -373,6 +409,18 @@ footer{
         width: 90%;
     }
 
+    .mainHeader{
+        top:0px;
+        position: relative;
+        height: 8vh;
+        font-size: 1.4em;
+        text-align:right;
+    }
+
+    #sltxt, #sltxtC,#ldtxt,
+    #abouttxt, #abouttxtC, #ldtxtC a {
+         padding-top: 3vh;
+    }
     /**** Diagram css ****/
     #p1, #p2{
         width: 50%;
@@ -387,9 +435,9 @@ footer{
         position: relative;
     }
     #diagramBody{
-        background:url(../images/bg2.png) no-repeat center center fixed;
+        background:url(../images/BG_HD_R.png) no-repeat center center fixed;
         background-size:100% auto;   
-        background-color: #403c35;
+        background-color: #383934;
     }
 
     .photo img{
@@ -408,11 +456,11 @@ footer{
         right: 0%;
     }
     #pos6{
-        margin-top: 32%;
+        margin-top: 34.5%;
     }
 
     #pos7{
-        margin-top: 13%;
+        margin-top: 16.5%;
     }
 
     /**** About css ****/
@@ -426,7 +474,7 @@ footer{
 
     #aboutContent{
         overflow-y: scroll;
-        height: 400px;
+        height: 68vh;
     }
 
     #aboutContent::-webkit-scrollbar {
@@ -438,7 +486,13 @@ footer{
         margin-bottom: 10%;/*10%*/
     }
 
-
+    footer{
+        margin: 0px auto;
+        width: 90%;
+        height: 40px;
+        bottom: 1.5vh;
+        position: fixed;
+    }
     /**** Content css ****/
     #contentBody{
         overflow-y: scroll;
@@ -453,9 +507,11 @@ footer{
     #photoInfo1, #photoInfo2{
         width: 100%;
     }
-
+    #story{
+        margin-left: 1vw;
+    }
     #graph{
-        padding-top: 14vh;
+        padding-top: 7vh;
     }
 
 }
@@ -463,6 +519,8 @@ footer{
 
 
 
-
+/* =================================================================== */
+/* =================== Photo size for all screens ==================== */
+/* =================================================================== */
 
 

@@ -1,3 +1,9 @@
+$(document).ready(function(){
+    $("#lightingChart").each(function () {
+        $(this).removeAttr('style');
+    });
+});
+
 var ctx = document.getElementById("lightingChart").getContext('2d');//creating objedct of Chart class
 var myChart = new Chart(ctx, {
     type: 'line',
@@ -18,7 +24,7 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
-        responsive:true,
+        responsive: true,
         scales: {
             yAxes: [{
                 ticks: {
