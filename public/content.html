@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="contentApp">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="controllers/content.js"></script> 
+
+    <!-- First option -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>-->
+    <!-- Second option -->
+    <!--  <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/none.js"></script> -->
+    
+</head>
+
+<body id="contentBody" ng-controller="contentController">  
+    <div id="contentWrapper">
+
+        <header class="mainHeader" id="headerB">
+            <div id="abouttxtC"><a href="about.html">About</a></div>
+            <div id="sltxtC"><a href="index.html"> Still Life |</a></div>
+            <div id="ldtxtC"><a href="index.html">Live Data</a></div>
+            
+            <div class="clear"></div>
+        </header>
+        <main>
+
+
+            <section id="photoInfo1">
+
+                    <div id="photoName"><div id="picName"> Food</div></div>
+                    <img id="url"src="http://res.cloudinary.com/livedata/livedataapp/food01.jpg">
+
+                    <div id="photoConcepts">
+                        <div class="contestPackage">
+                            <span class="conceptName">bo - </span> 
+                            <span class="defenition">bo</span>
+                        </div>
+                        <div class="contestPackage">
+                            <span class="conceptName">bo - </span> 
+                            <span class="defenition">bo</span>
+                        </div>
+                    <div class="clear"></div>   
+                    </div>
+            </section>
+
+
+
+            <section id="photoInfo2">
+
+                    <div id="story">
+                        As a child, in Russia I heard people use the language of Aesop, named after the slave from ancient Greece who often used words with a double meaning to criticise the society with impunity. When at the State Hermitage Museum in Saint Petersburg I discovered small Dutch paintings from the 17th century that illustrate everyday life using symbolic objects, I began to dream of putting together the following project: to create a book of still lifes in photography. I would prepare compositions made of food and the ingredients shown would match key elements of my life. Every photograph would have its own parallel short story, which would not necessarily describe a spectacular event; it could be limited to just showing a single detail of everyday life, an eye-opener in the contemporary day and age.
+                    </div>
+
+                    <div id="graph">
+                        <canvas id="lightingChart"></canvas>
+                        <!-- <div id="chartdiv"></div> -->
+                    </div>
+                
+            </section>
+
+
+            <div class="clear"></div>
+        <main>
+
+        
+        
+    </div> 
+    <!-- <script src="js/gChart.js"></script> -->
+    <script src="js/chart.js"></script>   
+</body>
+</html>

@@ -11,15 +11,17 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/initializeDiagram.js"></script>
+
     <!-- <script src="https://code.angularjs.org/1.4.0-rc.1/angular.js"></script> -->
     <!-- <script src="funcs.js"></script> -->
 
 </head>
-<body>  
+<body id="diagramBody">  
     <div id="diagramWrapper">
 
-        <header id="header">
-            <div id="abouttxt"><a href="#" ="">About</a></div>
+        <header class="mainHeader" id="headerA">
+            <div id="abouttxt"><a href="about.html">About</a></div>
             <div id="sltxt"> Still Life |</div>
             <div id="ldtxt">Live Data</div>
             
@@ -27,74 +29,88 @@
 
         </header>
         <main>
-            <!-- <div id="oval"></div> -->
-
-            <section id="pos1" class="imgWrapper">
-            <a class="photo" href="#"><img src="../images/food01.jpg"></a>
-            <div class="eye"><img src="images/eye.png"><div id="txt1">30</div></div>
+            <!-- CURVES -->
+            <section id="curves">
+                <div class="curve" id="curve1"></div>
+                <div class="curve" id="curve2"></div>
+                <div class="curve" id="curve3"></div>
+                <div class="curve" id="curve4"></div>
+                <div class="curve" id="curve5"></div>
+                <div class="curve" id="curve6"></div>
+                <div class="curve" id="curve7"></div>
             </section>
+            <!-- 000000 -->
+        <div>
+            <div id="p1">
+                <section id="pos6" class="imgWrapper pos_1">
+                <div class="eye"><img src="images/eye.png"><div id="txt1">06</div></div>
+                <a class="photo" href="#"><img class="img" src="../images/incompatibility06.jpg"></a>
+                </section>
+            
+                <section class="imgWrapper pos_1">
+                <div class="eye"><img src="images/eye.png"><div id="txt1">05</div></div>
+                <a class="photo" href="#"><img class="img" src="../images/mathematics05.jpg"></a>
+                </section>
+                
+                <section class="imgWrapper pos_1">
+                <div class="eye"><img src="images/eye.png"><div id="txt1">04</div></div>
+                <a class="photo" href="#"><img class="img" src="../images/scienceFiction04.jpg"></a>
+                </section>
+                
+                <section class="imgWrapper pos_1">
+                <div class="eye"><img src="images/eye.png"><div id="txt1">03</div></div>
+                <a class="photo" href="#"><img class="img" src="../images/notSoMiscellany03.jpg"></a>
+                </section>
+                
+                <section class="imgWrapper pos_1">
+                <div class="eye"><img src="images/eye.png"><div id="txt1">02</div></div>
+                <a class="photo" href="#"><img class="img" src="../images/theBlonde02.jpg"></a>
+                </section>
 
+                <section class="imgWrapper pos_1">
+                <div class="eye"><img src="images/eye.png"><div id="txt1">01</div></div>
+                <a class="photo" href="content.html"><img class="img" src="../images/food01.jpg"></a>
+                </section>
+            </div>
 
-            <section id="pos2" class="imgWrapper">
-            <a class="photo" id="photo2" href="#"><img src="../images/theBlonde02.jpg"></a>
-            <div class="eye"><img src="images/eye.png"><div id="txt1">31</div></div>
-            </section>
+            <div id="p2">
+                <section id="pos7" class="imgWrapper pos_2">
+                <div class="eye"><img src="images/eye.png"><div id="txt1">07</div></div>
+                <a class="photo" href="#"><img class="img" src="../images/orientation07.jpg"></a>
+                </section>
 
-            <section id="pos3" class="imgWrapper">
-            <div class="eye"><img src="images/eye.png"><div id="txt1">32</div></div>
-            <a class="photo" id="photo3" href="#"><img src="../images/notSoMiscellany03.jpg"></a>
-            </section>
+                <section class="imgWrapper pos_2">
+                <div class="eye"><img src="images/eye.png"><div id="txt1">08</div></div>
+                <a class="photo" href="#"><img class="img" src="../images/dostoyevsky08.jpg"></a>
+                </section>
 
-            <section id="pos4" class="imgWrapper">
-            <div class="eye"><img src="images/eye.png"><div id="txt1">33</div></div>
-            <a class="photo" id="photo4" href="#"><img src="../images/scienceFiction04.jpg"></a>
-            </section>
+                <section class="imgWrapper pos_2">
+                <div class="eye"><img src="images/eye.png"><div id="txt1">09</div></div>
+                <a class="photo" href="#"><img class="img" src="../images/veryWwll09.jpg"></a>
+                </section>
 
-            <section id="pos5" class="imgWrapper">
-            <div class="eye"><img src="images/eye.png"><div id="txt1">34</div></div>
-            <a class="photo" id="photo5" href="#"><img src="../images/mathematics05.jpg"></a>
-            </section>
+                <section class="imgWrapper pos_2">
+                <div class="eye"><img src="images/eye.png"><div id="txt1">10</div></div>
+                <a class="photo" href="#"><img class="img" src="../images/mission10.jpg"></a>
+                </section>
 
-            <section id="pos6" class="imgWrapper">
-            <div class="eye"><img src="images/eye.png"><div id="txt1">35</div></div>
-            <a class="photo" id="photo6" href="#"><img src="../images/incompatibility06.jpg"></a>
-            </section>
+                <section class="imgWrapper pos_2">
+                <div class="eye"><img src="images/eye.png"><div id="txt1">11</div></div>
+                <a class="photo" href="#"><img class="img" src="../images/ignorance11.jpg"></a>
+                </section>
 
-            <section id="pos7" class="imgWrapper">
-            <div class="eye"><img src="images/eye.png"><div id="txt1">36</div></div>
-            <a class="photo" id="photo7" href="#"><img src="../images/orientation07.jpg"></a>
-            </section>
+                <section class="imgWrapper pos_2">
+                <div class="eye"><img src="images/eye.png"><div id="txt1">12</div></div>
+                <a class="photo" href="#"><img class="img" src="../images/attorney12.jpg"></a>
+                </section>
 
-            <section id="pos8" class="imgWrapper">
-            <div class="eye"><img src="images/eye.png"><div id="txt1">37</div></div>
-            <a class="photo" id="photo8" href="#"><img src="../images/dostoyevsky08.jpg"></a>
-            </section>
-
-            <section id="pos9" class="imgWrapper">
-            <div class="eye"><img src="images/eye.png"><div id="txt1">38</div></div>
-            <a class="photo" id="photo9" href="#"><img src="../images/veryWwll09.jpg"></a>
-            </section>
-
-            <section id="pos10" class="imgWrapper">
-            <a class="photo" id="photo10" href="#"><img src="../images/mission10.jpg"></a>
-            <div class="eye"><img src="images/eye.png"><div id="txt1">39</div></div>
-            </section>
-
-            <section id="pos11" class="imgWrapper">
-            <a class="photo" id="photo11" href="#"><img src="../images/ignorance11.jpg"></a>
-            <div class="eye"><img src="images/eye.png"><div id="txt1">40</div></div>
-            </section>
-
-            <section id="pos12" class="imgWrapper">
-            <a class="photo" id="photo12" href="#"><img src="../images/attorney12.jpg"></a>
-            <div class="eye"><img src="images/eye.png"><div id="txt1">41</div></div>
-            </section>
-
-            <section id="pos13" class="imgWrapper">
-            <a class="photo" id="photo13" href="#"><img src="../images/kitchen13.jpg"></a>
-            <div class="eye"><img src="images/eye.png"><div id="txt1">42</div></div>
-            </section>
-           
+                <section class="imgWrapper pos_2">
+                <div class="eye"><img src="images/eye.png"><div id="txt1">13</div></div>
+                <a class="photo" href="#"><img class="img" src="../images/kitchen13.jpg"></a>
+                </section>
+            </div>
+        </div>
+        <div class="clear"></div>
 
         <main>
         
